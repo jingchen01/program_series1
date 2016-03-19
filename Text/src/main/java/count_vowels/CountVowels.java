@@ -17,14 +17,11 @@ For added complexity have it report a sum of each vowel found.
 public class CountVowels {
 
 	public static String count(String str) {
-		if (str == null || str.length() < 2) {
-			return str;
+		if (str == null || str.trim().length() < 2) {
+			return "";
 		}
 		str = str.trim().toLowerCase();
 		int len = str.length();
-		if (len < 2) {
-			return str;
-		}
 		HashMap<Character, Integer> vowel = new HashMap<Character, Integer>();
 		vowel.put('a', 0);
 		vowel.put('e', 0);
