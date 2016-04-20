@@ -9,7 +9,7 @@ import org.apache.commons.collections.map.LRUMap;
  * 
  */
 
-// Create Simple Cache object with the help of HashMap...
+// Create Simple Cache object with the help of LRUMap...
 public class InMemoryCache<K, T> {
 
 	private long timeToLive;
